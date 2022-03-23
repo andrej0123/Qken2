@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qken2.MainPage">
+
+    <Frame Padding="10" BackgroundColor="Black">
+        <Grid BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label
+             Grid.Row="0" 
+             Grid.Column="0" 
+             Text="Qken" 
+             TextColor="White"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             Grid.ColumnSpan="3"
+             FontSize="20"
+             BackgroundColor="Indigo"/>
+            <Label 
+             Grid.Row="1" 
+             Grid.Column="0" 
+             Text="Výber Hier:" 
+             TextColor="Black"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             Grid.ColumnSpan="3"
+             FontSize="20"
+             BackgroundColor="DimGray"/>
+            <Button
+                Grid.Row="2" 
+                Grid.Column="0"
+                Text="Dudo"
+                Clicked="Button_OnClicked"/>
+            <Button
+                Grid.Row="2" 
+                Grid.Column="1"
+                Text="Hra2"/>
+            <Button
+                Grid.Row="2" 
+                Grid.Column="2"
+                Text="Hra3"/>
+            <Button
+                Grid.Row="3" 
+                Grid.Column="0"
+                Text="Hra4"/>
+            <Button
+                Grid.Row="3" 
+                Grid.Column="1"
+                Text="Hra5"/>
+            <Button
+                Grid.Row="3" 
+                Grid.Column="2"
+                Text="Hra6"/>
+            <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Text="Tu bude daco co ma napadne"
+                TextColor="Black"
+                BackgroundColor="DimGray"/>
+            <StackLayout Grid.Column="0" Grid.Row="5" Orientation="Horizontal" Grid.ColumnSpan="3">
+                 <Label
+                     Text="Tu bude daco co ma napadne"
+                     TextColor="White"
+                     BackgroundColor="Indigo"/>
+                 <Label
+                     Text="Tu bude daco co ma napadne"
+                     TextColor="White"
+                     BackgroundColor="Indigo"/>
+            </StackLayout>
+
+        </Grid>
+    </Frame>
+
+</ContentPage>
